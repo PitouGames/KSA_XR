@@ -38,7 +38,10 @@ namespace KSA.XR
 		[StarMapAfterGui]
 		public void UIPulse(double dt)
 		{
-			ui?.StatusWindow();
+			if (Program.DrawUI)
+			{
+				ui?.StatusWindow();
+			}
 		}
 
 		[StarMapAfterOnFrame]
